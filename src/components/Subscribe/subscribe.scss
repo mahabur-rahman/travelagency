@@ -1,0 +1,186 @@
+#subscribe {
+    overflow: hidden;
+    padding: 5rem 0;
+    // container
+    .container {
+        position: relative;
+        text-align: center;
+        max-width: 1140px;
+        background-color: rgba(223, 215, 249, 0.199);
+        border-radius: 129px 20px 20px 20px;
+        -webkit-border-radius: 129px 20px 20px 20px;
+        -moz-border-radius: 129px 20px 20px 20px;
+        -ms-border-radius: 129px 20px 20px 20px;
+        -o-border-radius: 129px 20px 20px 20px;
+    }
+    // main content
+    .main {
+        padding: 5rem 2.5rem;
+        .content {
+            h2 {
+                font-weight: 600;
+                font-size: 1.60181rem;
+                line-height: 1.7;
+                color: #5e6282;
+            }
+        }
+    }
+    // form
+    form {
+        input {
+            border: none;
+            outline: none;
+        }
+        .form-control {
+            appearance: none;
+            outline: 0;
+            width: 30%;
+            height: 60px;
+            border-radius: 10px;
+            color: #39425d;
+            padding: 1rem 1rem 1rem 2.7rem;
+            border: none;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+            // focus
+            &:focus {
+                border: none;
+                outline: none;
+                border: 2px solid #ff846a;
+            }
+        }
+        .form-control::placeholder {
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+    }
+    .subs_form {
+        position: relative;
+        img {
+            position: absolute;
+            top: 75%;
+            left: 29%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+        }
+        button {
+            font-size: 0.99rem;
+            cursor: pointer;
+            margin-top: 4rem;
+            margin-left: 1rem;
+            color: #fffefe;
+            background-image: linear-gradient(to bottom, #ff946d, #ff7d68);
+            border: none;
+            border-radius: 0.625rem;
+            padding: 1rem 2.5rem;
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+        }
+        button:hover {
+            color: #fffefe;
+            background-color: #be5945;
+            border-color: #b25441;
+        }
+    }
+    // mail
+    .mail {
+        img {
+            position: absolute;
+            top: -7%;
+            right: -1%;
+        }
+    }
+    // shape 1
+    .shape1 {
+        img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    // shape 2
+    .shape2 {
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+// start responsive
+@media (max-width: 1199px) {
+    #subscribe .container {
+        width: 900px;
+    }
+    #subscribe .subs_form img {
+        left: 28%;
+    }
+}
+
+@media (max-width: 991px) {
+    #subscribe .container {
+        width: 700px;
+    }
+    #subscribe .main .content h2 {
+        font-size: 1.4rem;
+    }
+    #subscribe form .form-control {
+        width: 50%;
+    }
+    #subscribe .subs_form img {
+        left: 16%;
+    }
+}
+
+@media (max-width: 767px) {
+    #subscribe .container {
+        width: 500px;
+    }
+    #subscribe .main .content h2 {
+        font-size: 1.5rem;
+    }
+    #subscribe form .form-control {
+        width: 90%;
+        margin-top: 2rem;
+    }
+    #subscribe .subs_form img {
+        top: 39%;
+        left: 10%;
+    }
+    #subscribe .subs_form button {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    #subscribe .container {
+        width: 300px;
+    }
+    #subscribe .main .content h2 {
+        font-size: 1.3rem;
+    }
+    #subscribe form .form-control {
+        width: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    #subscribe {
+        padding: 3rem 0;
+    }
+}
+
+// end of responsive

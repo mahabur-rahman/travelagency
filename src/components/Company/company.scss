@@ -1,0 +1,51 @@
+#company {
+    overflow: hidden;
+    padding: 5rem 0;
+    // company logo
+    .company_logo {
+        width: 84%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        // item
+        .item {
+            padding: 1rem;
+            margin: 0 1rem;
+            width: 20%;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+        }
+        .item:hover {
+            background: #fff;
+            box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+            border-radius: 10px;
+        }
+    }
+    .container {
+        text-align: center;
+    }
+}
+
+// start responsive
+@media (max-width: 991px) {
+    #company {
+        padding: 3rem 0;
+    }
+    #company .company_logo {
+        flex-direction: column;
+    }
+    #company .company_logo .item {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+    #company .company_logo .item img {
+        max-width: 100%;
+    }
+}
+
+// end of responsive

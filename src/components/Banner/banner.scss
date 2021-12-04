@@ -1,0 +1,159 @@
+#banner {
+    background: url("../../images/banner-bg.svg") no-repeat center center / cover;
+    margin: 0 auto;
+    overflow: hidden;
+    // height: 142vh;
+    min-height: 130vh;
+    padding: 7rem 0;
+    .main_div {
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        .banner_content {
+            position: relative;
+            margin-top: 5rem;
+            width: 50%;
+            h3 {
+                font-size: 20px;
+                line-height: 30px;
+                text-transform: uppercase;
+                color: #df6951;
+                font-weight: 700;
+                margin-bottom: 1.1rem;
+            }
+            h2 {
+                font-family: "Volkhov", serif;
+                font-size: 81px;
+                font-weight: bold;
+                line-height: 89px;
+                color: #181e4b;
+                line-height: 89px;
+                margin-bottom: 1.3rem;
+            }
+            p {
+                margin-right: 20%;
+                color: #5e6282;
+                line-height: 30px;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            // btn
+            .findMoreBtn {
+                width: 180px;
+                height: 55px;
+                cursor: pointer;
+                outline: none;
+                border: none;
+                color: #fff;
+                font-size: 1.125rem;
+                border-radius: 0.5rem;
+                background: #f1a501;
+                -webkit-border-radius: 0.5rem;
+                -moz-border-radius: 0.5rem;
+                -ms-border-radius: 0.5rem;
+                -o-border-radius: 0.5rem;
+                box-shadow: 0 1.25rem 2.1875rem 0 rgba(241, 165, 1, 0.15);
+                transition: 0.2s;
+                -webkit-transition: 0.2s;
+                -moz-transition: 0.2s;
+                -ms-transition: 0.2s;
+                -o-transition: 0.2s;
+            }
+            .playImg {
+                margin-top: 1.5rem;
+            }
+            .playText {
+                cursor: none;
+                color: #686d77;
+                margin-top: -1rem;
+            }
+            .findMoreBtn:hover {
+                background-color: #cd8c01;
+            }
+            .playImg:hover {
+                opacity: 0.9;
+            }
+            // decore img
+            .decoreImg {
+                position: absolute;
+                top: 22%;
+                left: 44%;
+            }
+        }
+        // banner img
+        .banner_img {
+            width: 48%;
+            text-align: right;
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+// ===== responsive =====
+@media (max-width: 1200px) {
+    #banner .main_div .banner_content h2 {
+        font-size: 4rem;
+        line-height: 1.1;
+    }
+    #banner .main_div .banner_content .decoreImg {
+        top: 21%;
+    }
+}
+
+@media (max-width: 992px) {
+    #banner .main_div .banner_content {
+        width: 100%;
+    }
+    #banner .main_div .banner_content .decoreImg {
+        display: none;
+    }
+    #banner .main_div .banner_content .decoreImg {
+        top: 21%;
+    }
+}
+
+@media (max-width: 768px) {
+    #banner .main_div .banner_img img {
+        display: none;
+    }
+    #banner {
+        padding: 5rem 0;
+    }
+    #banner .main_div .banner_content p {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #banner {
+        padding: 5rem 0;
+    }
+    #banner .main_div .banner_img img {
+        display: none;
+    }
+    #banner .main_div .banner_content h2 {
+        font-size: 3rem;
+    }
+    #banner .main_div .banner_content h3 {
+        font-size: 1rem;
+    }
+    #banner .main_div .banner_content .findMoreBtn {
+        height: 47px;
+        width: 210px;
+    }
+}
+
+@media (max-width: 437px) {
+    #banner .main_div .banner_content h2 {
+        font-size: 2.5rem;
+    }
+    #banner .main_div .banner_content .findMoreBtn {
+        font-size: 1rem;
+    }
+}
+
+// ===== end of responsive =====

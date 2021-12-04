@@ -1,0 +1,155 @@
+#destinations {
+    overflow: hidden;
+    padding: 5rem 0;
+    position: relative;
+    background: #fff;
+    // main title
+    .title {
+        h4 {
+            text-transform: capitalize;
+            font-weight: 600;
+            color: #5e6282;
+            font-size: 1.125rem;
+            line-height: 27px;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            color: #14183e;
+            font-weight: 700;
+            font-size: 3rem;
+            text-transform: capitalize;
+            line-height: 1.2;
+            font-family: "Volkhov", serif;
+            margin-bottom: 4rem;
+        }
+    }
+    .main_div {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        .col-4 {
+            margin: 0 1rem;
+            width: 33.33333%;
+        }
+    }
+    // card
+    .card {
+        width: 314px;
+        background: #ffffff;
+        border-radius: 0px 0px 24px 24px;
+        box-shadow: 0 6.25rem 5rem 0 rgba(0, 0, 0, 0.02), 0 4.05063rem 2.92813rem 0 rgba(0, 0, 0, 0.0152), 0 2.4075rem 1.5925rem 0 rgba(0, 0, 0, 0.0121), 0 1.25rem 0.8125rem 0 rgba(0, 0, 0, 0.01), 0 0.50938rem 0.4075rem 0 rgba(0, 0, 0, 0.0079), 0 0.11563rem 0.19687rem 0 rgba(0, 0, 0, 0.0048);
+        -webkit-border-radius: 0px 0px 24px 24px;
+        -moz-border-radius: 0px 0px 24px 24px;
+        -ms-border-radius: 0px 0px 24px 24px;
+        -o-border-radius: 0px 0px 24px 24px;
+    }
+    .card.px {
+        padding: 1.5rem 1.4rem;
+    }
+    .card_img {
+        img {
+            max-width: 120%;
+            margin-left: -8.2%;
+            border-radius: 25px 25px 0 0;
+            -webkit-border-radius: 25px 25px 0 0;
+            -moz-border-radius: 25px 25px 0 0;
+            -ms-border-radius: 25px 25px 0 0;
+            -o-border-radius: 25px 25px 0 0;
+        }
+    }
+    // cart title
+    .card_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sub_title,
+    .view {
+        h4 {
+            margin: 1rem 0;
+            font-style: normal;
+            font-weight: 500;
+            color: #5e6282;
+            font-size: 18px;
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+            // hover
+            &:hover {
+                color: #f1a501;
+            }
+        }
+    }
+    // tripdays
+    .tripDays {
+        span {
+            color: #5e6282;
+            margin-left: 1rem;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+    }
+    // ring shape
+    .ring_img {
+        img {
+            z-index: -1;
+            position: absolute;
+            top: 60%;
+            right: 8%;
+        }
+    }
+}
+
+// ===== responsive =====
+@media (max-width: 1199px) {
+    #destinations .ring_img img {
+        right: 7%;
+    }
+    #destinations .card {
+        width: 100%;
+    }
+    #destinations .card_title {
+        flex-direction: column;
+    }
+    #destinations .sub_title h4,
+    #destinations .view h4 {
+        margin: 0.5rem;
+    }
+    #destinations .card.px {
+        padding: 1.5rem 0;
+    }
+    #destinations .card_img img {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    #destinations .tripDays {
+        text-align: center;
+    }
+    #destinations .ring_img img {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #destinations .main_div {
+        flex-direction: column;
+    }
+    #destinations .card.px {
+        padding: 1.5rem 0;
+        border-radius: 30px;
+        padding-top: 0;
+    }
+    #destinations .main_div .col-4 {
+        width: 90%;
+        margin: 1rem 0;
+    }
+    #destinations .card_img img {
+        width: 100%;
+    }
+}
+
+// ===== end of responsive =====

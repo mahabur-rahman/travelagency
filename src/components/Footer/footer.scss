@@ -1,0 +1,196 @@
+#footer {
+    overflow: hidden;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    // container
+    .container {
+        max-width: 1140px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    // cols
+    .col-3 {
+        width: 25%;
+    }
+    .col-2 {
+        width: 16.66667%;
+    }
+    // footer logo
+    .footer_logo {
+        margin-top: -15%;
+        img {
+            max-width: 100%;
+        }
+        p {
+            margin-top: 1.8rem;
+            margin-right: 10%;
+            font-size: 0.88889rem;
+            color: #5e6282;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+    // first list, second, third list
+    .first_list,
+    .second_list,
+    .third_list {
+        h3 {
+            margin-bottom: 1.8rem;
+            color: #080809;
+            font-size: 1.26563rem;
+            font-weight: 700;
+        }
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        ul li a {
+            color: #5e6282;
+            line-height: 1.5;
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+        ul li a:hover {
+            color: #f1a501;
+        }
+    }
+    .social_icon {
+        margin-bottom: 2rem;
+        ul li {
+            cursor: pointer;
+            margin: 0 1rem;
+            height: 41px;
+            width: 41px;
+            text-align: center;
+            line-height: 45px;
+            border-radius: 50%;
+            border: 0;
+            font-size: 0.875rem;
+            background: #fff;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+        }
+        ul li a {
+            color: #080809;
+        }
+    }
+    // facebook
+    .facebook a {
+        color: #000;
+    }
+    .facebook:hover a {
+        color: #fff;
+    }
+    .facebook:hover {
+        background-color: #3c5a99;
+    }
+    // instagram
+    .instagram a {
+        color: #000;
+    }
+    .instagram:hover a {
+        color: #fff;
+    }
+    .instagram:hover {
+        background-image: conic-gradient( from 180deg at 50% 50%, #b8d2f1 0deg, #f289aa 60deg, #c68bf0 106.09deg, #d164da 153.75deg, #c963e8 221.25deg, #bfc2e8 258.75deg, #ffc999 288.75deg, #d0d8c9 315deg, #bad0f1 334.13deg, #ced8cb 358.97deg, rgba(255, 255, 255, 0) 360deg);
+    }
+    // twitter
+    .twitter a {
+        color: #000;
+    }
+    .twitter:hover a {
+        color: #fff;
+    }
+    .twitter:hover {
+        background-color: #1da1f2;
+    }
+    // title
+    .title {
+        h3 {
+            margin-left: 1rem;
+            font-size: 1.26563rem;
+            margin-bottom: 1rem;
+            color: #5e6282;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+    }
+    .payment {
+        margin-left: -5%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    // copyright
+    .copyright {
+        p {
+            padding-top: 4rem;
+            padding-bottom: 0.5rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #5e6282;
+        }
+    }
+}
+
+// start responsive
+@media (max-width: 1199px) {
+    #footer .footer_logo {
+        padding: 0 0.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #footer {
+        .flex {
+            margin-top: 1rem;
+            display: inline-flex;
+        }
+    }
+    #footer .container {
+        padding-top: 3rem;
+        text-align: center;
+        flex-direction: column;
+    }
+    #footer {
+        .col-md-6,
+        .col-3 {
+            width: 50%;
+        }
+    }
+    #footer {
+        .col-2 {
+            margin: 0.5rem 0;
+            width: 50%;
+        }
+    }
+    #footer .footer_logo p {
+        margin-right: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    #footer .copyright p {
+        padding-top: 2rem;
+    }
+    #footer .title h3 {
+        margin-left: 1rem;
+    }
+    #footer .title h3 {
+        font-size: 1rem;
+    }
+    #footer .payment {
+        margin-left: 1.2rem;
+    }
+    #footer .payment .google_play {
+        margin-right: 0.5rem;
+    }
+}
+
+// end of responsive

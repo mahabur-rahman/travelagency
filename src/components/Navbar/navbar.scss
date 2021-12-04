@@ -1,0 +1,176 @@
+#navbar {
+    z-index: 9999999999999999;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    .main_div {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .logo {
+            width: 20%;
+        }
+        .nav_list {
+            width: 70%;
+            ul li {
+                padding: 0 1.8rem;
+            }
+            ul li a {
+                font-size: 17px;
+                color: #212832;
+                text-transform: capitalize;
+                font-weight: 500;
+                transition: 0.2s;
+                -webkit-transition: 0.2s;
+                -moz-transition: 0.2s;
+                -ms-transition: 0.2s;
+                -o-transition: 0.2s;
+            }
+            ul li a:hover {
+                color: #f1a501;
+            }
+            // signBtn
+            .sign_btn {
+                font-weight: 500;
+                padding: 0.4rem 1rem;
+                height: 2rem;
+                width: 20%;
+                border: 1px solid #000;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+            }
+            .sign_btn:hover {
+                color: #fff;
+                background: #000;
+            }
+        }
+        // for dropdown start
+        .dropdown {
+            margin-left: -1.5rem;
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown li {
+            font-weight: 500;
+        }
+        .dropdown-content {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            background: #fff;
+            width: 170%;
+            top: 147%;
+            left: -100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 9999;
+            transition: 0.3s;
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        .dropdown-content a {
+            margin-left: -70%;
+            font-weight: 300;
+            color: #000;
+            padding: 0.5rem 5.4rem;
+            text-decoration: none;
+            display: block;
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+        }
+        .dropdown-content a:hover {
+            background: transparent;
+            color: #f1a501;
+        }
+        .dropdown:hover .dropdown-content {
+            visibility: visible;
+            opacity: 1;
+        }
+        .dropdown {
+            transition: 0.2s;
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+        }
+        .dropbtn:hover {
+            color: #f1a501;
+        }
+        // for dropdown end
+    }
+}
+
+// ===== responsive =====
+@media (max-width: 1225px) {
+    #navbar .main_div .nav_list ul li {
+        padding: 0 1.2rem;
+    }
+    #navbar .main_div .nav_list ul li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    #navbar .main_div .nav_list ul li {
+        padding: 0 0.5rem;
+    }
+    #navbar .main_div .nav_list ul li a {
+        font-size: 15px;
+    }
+    #navbar .main_div .logo {
+        width: 20%;
+        margin-bottom: 1rem;
+    }
+    #navbar .main_div .dropdown {
+        margin-left: 0.5rem;
+    }
+    ul {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 786px) {
+    #navbar .main_div .nav_list ul li {
+        padding: 0 0.5rem;
+    }
+    #navbar .main_div .nav_list ul li a {
+        font-size: 15px;
+    }
+    #navbar .main_div {
+        flex-direction: row;
+    }
+    #navbar .main_div .nav_list .sign_btn {
+        font-size: 0.9rem;
+    }
+    #navbar .list_none {
+        display: none;
+    }
+    ul {
+        margin-top: -1rem;
+        justify-content: end;
+    }
+}
+
+// ===== responsive =====
